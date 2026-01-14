@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Grade Calculator</h2>
+        <div class="input-section">
+            <input type="text" id="subjectName" placeholder="Nama Subjek">
+            <input type="number" id="marks" placeholder="Markah (0-100)">
+            <button onclick="addSubject()">Tambah Subjek</button>
+        </div>
+
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>Subjek</th>
+                    <th>Markah</th>
+                    <th>Gred</th>
+                    <th>Tindakan</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <div class="result-section">
+            <p>Purata Keseluruhan: <span id="averageScore">0</span></p>
+            <p>Status: <span id="finalStatus">-</span></p>
+            <button onclick="clearData()" class="clear-btn">Padam Semua Data</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
